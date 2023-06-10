@@ -1,34 +1,43 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="./style.css">
-     <title>Slider</title>
- </head>
- <body>
-     <div class="container">
-         <div class="images">
-             <img src="https://images.pexels.com/photos/3934023/pexels-photo-3934023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="active">
-             <img src="https://images.pexels.com/photos/3801516/pexels-photo-3801516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-             <img src="https://images.pexels.com/photos/2131841/pexels-photo-2131841.jpeg?auto=compress&cs=tinysrgb&w=600">
-             <img src="https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=600">
-             <img src="https://images.pexels.com/photos/2916820/pexels-photo-2916820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-         </div>
-         <div class="buttons">
-              <span class="next" onclick="plusSlides(1)">❯</span>
-              <span class="prev" onclick="plusSlides(-1)">❮</span>
-         </div>
-         <div class="dotsContainer">
-            <span class="dot active" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span> 
-            <span class="dot" onclick="currentSlide(5)"></span> 
-            
-         </div>
-     </div>
-     <script src="./slider.js"></script>
- </body>
- </html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slideshow-container" id="slideshow">
+        
+        <div class="mySlides fade">
+            <img src="https://images.pexels.com/photos/3934023/pexels-photo-3934023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img class="img-second"
+                src="https://images.pexels.com/photos/2916820/pexels-photo-2916820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg?auto=compress&cs=tinysrgb&w=600"
+                style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img class="img-fourth" src="https://images.pexels.com/photos/3801516/pexels-photo-3801516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" srcset="" style="width:100%">
+                    </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
